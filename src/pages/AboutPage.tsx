@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 import { Reveal } from '../components/Reveal'
 
 const team = [
-  { name: 'Елена Воронцова', role: 'Основатель, private clients', image: '/images/adviser-01.webp' },
-  { name: 'Михаил Арсеньев', role: 'Партнёр, инвестиции', image: '/images/adviser-02.webp' },
-  { name: 'Анна Левина', role: 'Советник, городская недвижимость', image: '/images/adviser-03.webp' },
+  { name: 'Елена Воронцова', role: 'Основатель, private clients', image: import.meta.env.BASE_URL + 'images/adviser-01.webp' },
+  { name: 'Михаил Арсеньев', role: 'Партнёр, инвестиции', image: import.meta.env.BASE_URL + 'images/adviser-02.webp' },
+  { name: 'Анна Левина', role: 'Советник, городская недвижимость', image: import.meta.env.BASE_URL + 'images/adviser-03.webp' },
 ]
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
       </header>
 
       <section className="about-manifesto shell">
-        <Reveal className="about-manifesto__image"><img src="/images/about.webp" alt="Интерьер премиальной резиденции" /></Reveal>
+        <Reveal className="about-manifesto__image"><img src={`${import.meta.env.BASE_URL}images/about.webp" alt="Интерьер премиальной резиденции" /></Reveal>
         <Reveal className="about-manifesto__copy">
           <p className="eyebrow">Манифест</p>
           <h2>Мы не ускоряем выбор.<br />Мы делаем его <em>точнее.</em></h2>

@@ -13,7 +13,7 @@ export function PropertyGallery({ images, title }: { images: string[]; title: st
         if (event.key === 'ArrowRight') move(1)
       }}
     >
-      <img src={images[active]} alt={`${title}, кадр ${active + 1}`} onError={(event) => { event.currentTarget.src = '/images/image-fallback.svg' }} />
+      <img src={images[active]} alt={`${title}, кадр ${active + 1}`} onError={(event) => { event.currentTarget.src = import.meta.env.BASE_URL + 'images/image-fallback.svg' }} />
       <div className="property-gallery__controls">
         <button type="button" aria-label="Предыдущий кадр" onClick={() => move(-1)}>←</button>
         <span aria-live="polite">Кадр {active + 1} из {images.length}</span>

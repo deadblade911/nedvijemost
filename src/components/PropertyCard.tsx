@@ -8,7 +8,7 @@ export function PropertyCard({ property, index }: { property: Property; index?: 
     <article className="property-card">
       <div className="property-card__image-wrap">
         <Link to={`/properties/${property.slug}`} aria-label={`${property.title} — открыть объект`}>
-          <img src={property.image} alt={`Интерьер объекта «${property.title}»`} loading="lazy" onError={(event) => { event.currentTarget.src = '/images/image-fallback.svg' }} />
+          <img src={property.image} alt={`Интерьер объекта «${property.title}»`} loading="lazy" onError={(event) => { event.currentTarget.src = import.meta.env.BASE_URL + 'images/image-fallback.svg' }} />
         </Link>
         <span className="property-card__tag">{property.tag}</span>
         <FavoriteButton id={property.id} title={property.title} />
