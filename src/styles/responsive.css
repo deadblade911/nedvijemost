@@ -1,0 +1,141 @@
+@media (max-width: 1180px) {
+  .site-header__inner,
+  .home-hero__content,
+  .featured-grid,
+  .manifesto-section__inner,
+  .founder-section,
+  .home-cta__inner,
+  .catalog-hero,
+  .inner-hero {
+    column-gap: 1rem;
+  }
+
+  .site-header__actions {
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    overflow-x: clip;
+  }
+
+  .home-hero__media img {
+    object-position: 60% center;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(3.5rem, 15.5vw, 4.8rem);
+    line-height: 0.86;
+  }
+
+  .home-hero__wash {
+    background: linear-gradient(180deg, rgba(20, 18, 17, 0.76), rgba(20, 18, 17, 0.3) 52%, rgba(20, 18, 17, 0.72));
+  }
+
+  .home-hero__edition {
+    display: none;
+  }
+
+  .quick-search,
+  .catalog-toolbar {
+    width: 100%;
+  }
+
+  .property-card__meta,
+  .property-card__title-row {
+    gap: 0.5rem;
+  }
+
+  .property-card__meta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .property-card__title-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .property-card h3 {
+    max-width: none;
+  }
+
+  .catalog-hero h1 {
+    font-size: clamp(3.55rem, 15vw, 4.2rem);
+    overflow-wrap: normal;
+    hyphens: auto;
+  }
+
+  .property-hero h1,
+  .inner-hero h1 {
+    overflow-wrap: anywhere;
+  }
+
+  .property-gallery__controls {
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
+
+  .lead-form,
+  .lead-success {
+    margin-inline: -16px;
+  }
+
+  .team-grid,
+  .recommendations > div {
+    gap: 3rem;
+  }
+
+  button,
+  select,
+  input,
+  .arrow-link,
+  .inner-cta a,
+  .page-not-found a {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 390px) {
+  .home-hero h1 {
+    font-size: 3.55rem;
+  }
+
+  .home-hero__intro {
+    font-size: 0.82rem;
+  }
+
+  .radial-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .catalog-toolbar > p {
+    font-size: 1.12rem;
+  }
+
+  .catalog-view-toggle button {
+    min-width: 40px;
+  }
+
+  .property-gallery__controls span {
+    min-width: 92px;
+  }
+
+  .mobile-menu {
+    padding-inline: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero__media img,
+  .home-hero h1 {
+    animation: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

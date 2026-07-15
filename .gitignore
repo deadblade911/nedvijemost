@@ -1,0 +1,10 @@
+.worktrees/
+.superpowers/
+.playwright-mcp/
+node_modules/
+dist/
+outputs/
+playwright-report/
+test-results/
+work/
+*.log

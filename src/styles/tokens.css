@@ -1,0 +1,14 @@
+:root {
+  --paper: #f3efe7;
+  --ivory: #fbf9f4;
+  --ink: #191817;
+  --muted: #706d67;
+  --oxblood: #6f1d2a;
+  --moss: #6f7464;
+  --line: #d7d0c5;
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans: "Manrope", sans-serif;
+  --shell: min(calc(100% - 64px), 1440px);
+  --section-space: clamp(5rem, 10vw, 10rem);
+  --ease: cubic-bezier(0.23, 1, 0.32, 1);
+}

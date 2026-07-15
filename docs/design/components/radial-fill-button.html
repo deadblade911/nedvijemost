@@ -1,0 +1,53 @@
+<!--
+  Interaction reference adapted from:
+  https://uiverse.io/gharsh11032000/neat-bullfrog-61
+  Original author: Harsh Gupta (gharsh11032000), MIT License.
+-->
+<button class="animated-button" type="button">
+  <span>Смотреть коллекцию</span>
+  <span aria-hidden="true"></span>
+</button>
+
+<style>
+  .animated-button {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 12px 24px;
+    border: 1px solid currentColor;
+    border-radius: 100px;
+    color: #191817;
+    background: transparent;
+    font: 600 16px/1.2 sans-serif;
+    cursor: pointer;
+    transition: color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .animated-button span:first-child {
+    position: relative;
+    z-index: 1;
+  }
+
+  .animated-button span:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #6f1d2a;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: width 0.7s cubic-bezier(0.23, 1, 0.32, 1), height 0.7s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.4s ease;
+  }
+
+  .animated-button:hover {
+    color: #fbf9f4;
+  }
+
+  .animated-button:hover span:last-child {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+</style>
