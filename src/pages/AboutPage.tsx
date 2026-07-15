@@ -17,7 +17,7 @@ export default function AboutPage() {
       </header>
 
       <section className="about-manifesto shell">
-        <Reveal className="about-manifesto__image"><img src={`${import.meta.env.BASE_URL}images/about.webp" alt="Интерьер премиальной резиденции" /></Reveal>
+        <Reveal className="about-manifesto__image"><img src={`${import.meta.env.BASE_URL}images/about.webp`} alt="Интерьер премиальной резиденции" /></Reveal>
         <Reveal className="about-manifesto__copy">
           <p className="eyebrow">Манифест</p>
           <h2>Мы не ускоряем выбор.<br />Мы делаем его <em>точнее.</em></h2>

@@ -39,7 +39,7 @@ export default function HomePage() {
     <div className="home-page">
       <section className="home-hero">
         <div className="home-hero__media" aria-hidden="true">
-          <img src={`${import.meta.env.BASE_URL}images/hero.webp" alt="" />
+          <img src={`${import.meta.env.BASE_URL}images/hero.webp`} alt="" />
           <div className="home-hero__wash" />
         </div>
         <div className="home-hero__content shell">
@@ -176,7 +176,7 @@ export default function HomePage() {
 
       <section className="founder-section shell">
         <Reveal className="founder-section__image">
-          <img src={`${import.meta.env.BASE_URL}images/about.webp" alt="Современный интерьер с натуральным камнем" loading="lazy" />
+          <img src={`${import.meta.env.BASE_URL}images/about.webp`} alt="Современный интерьер с натуральным камнем" loading="lazy" />
           <span>Private office · Moscow</span>
         </Reveal>
         <Reveal className="founder-section__copy">
