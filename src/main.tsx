@@ -16,7 +16,7 @@ import './styles/responsive.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/nedvijemost">
       <AppProviders><App /></AppProviders>
     </BrowserRouter>
   </StrictMode>,
